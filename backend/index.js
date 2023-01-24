@@ -28,7 +28,7 @@ const { MONGO_DB_URL } = process.env;
 mongoose.connect(MONGO_DB_URL)
     .then(() => {
         webApp.listen(PORT, () => {
-            console.log(`Mongodb connected and Server is running at ${PORT}.`);
+            console.log(`Mongodb connected and Server is running at ${5000}.`);
         });
     })
     .catch((err) => {
