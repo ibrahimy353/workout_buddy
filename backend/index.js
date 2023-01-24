@@ -23,7 +23,7 @@ const workoutRoute = require('./routes/workouts_route');
 webApp.use('/', homeRoute.router);
 webApp.use('/api/workouts', workoutRoute.router);
 
-const { MONGO_DB_URL } = process.env;
+const { MONGO_DB_URL } = process.env || 6001;
 
 mongoose.connect(MONGO_DB_URL)
     .then(() => {
