@@ -25,7 +25,7 @@ webApp.use('/api/workouts', workoutRoute.router);
 
 const { MONGO_DB_URL } = process.env || 6001;
 
-mongoose.connect(MONGO_DB_URL)
+mongoose.connect(MONGO_DB_URL)//connects to the url in .env file
     .then(() => {
         webApp.listen(PORT, () => {
             console.log(`Mongodb connected and Server is running at ${PORT}.`);
