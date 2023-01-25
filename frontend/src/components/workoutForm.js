@@ -52,7 +52,7 @@ const WorkoutForm = () => {
                 value={title}
             />
 
-            <label>Load in kg:</label>
+            <label>Load in Kg:</label>
             <input
                 type="number"
                 onChange={(e) => setLoad(e.target.value)}
